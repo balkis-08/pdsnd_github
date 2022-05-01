@@ -4,7 +4,7 @@
 May 01, 2022.
 
 ### Project Title
-Explore US bikeshare data
+Explore US bikeshare data for three different cities
 
 ### Description
 investigate the US bikeshare rental data
