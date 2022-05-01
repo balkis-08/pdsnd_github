@@ -158,7 +158,7 @@ def trip_duration_stats(df):
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40, '\n')
-    print('calculating next statistics')
+    
 
 def user_stats(df):
     """Displays statistics on bikeshare users."""
@@ -176,7 +176,7 @@ def user_stats(df):
     print('calculating next statistics', '\n')
 
     # Display counts of gender
-    print('what is the breakdown of users by gender?')
+    
     
     try:
         gender = df['Gender'].value_counts()
