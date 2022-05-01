@@ -106,10 +106,10 @@ def time_stats(df):
     start_time = time.time()
 
     # display the most common month
-    print('The most freqent month integer is', df['month'].value_counts().idxmax())
+    print('The most freqent month integer is', df['month'].mode()[0])
 
     # display the most common day of week
-    print(f'The most freqent day is:', df['day_of_week'].value_counts().idxmax())
+    print(f'The most freqent day is:', df['day_of_week']..mode()[0])
    
     # display the most common start hour
     df['hour'] = df['Start Time'].dt.hour
@@ -158,7 +158,7 @@ def trip_duration_stats(df):
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40, '\n')
-    print('calculating next statistics')
+    
 
 def user_stats(df):
     """Displays statistics on bikeshare users."""
@@ -176,7 +176,7 @@ def user_stats(df):
     print('calculating next statistics', '\n')
 
     # Display counts of gender
-    print('what is the breakdown of users by gender?')
+    
     
     try:
         gender = df['Gender'].value_counts()
